@@ -113,6 +113,9 @@ class _NativeFeaturesPageState extends State<NativeFeaturesPage> {
       await prefs.setString(key, value);
 
       await _loadKeyValuePairs();
+
+      keyController.text = "";
+      valueController.text = "";
     }
 
     return SafeArea(
